@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: VecCTM
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Robin
+    family-names: Hauke
+  - given-names: Jelle
+    family-names: Kübler
+    orcid: 'https://orcid.org/0000-0001-8095-1815'
+  - given-names: Marvin
+    family-names: Baumann
+    orcid: 'https://orcid.org/0000-0001-5952-7112'
+identifiers:
+  - type: url
+    value: 'https://github.com/kit-ifv/VecCTM'
+repository-code: 'https://github.com/kit-ifv/VecCTM'
+keywords:
+  - cell transmission model
+  - macroscopic traffic flow
+  - simulation
+  - vectorization
+  - freeway traffic
+license: GPL-3.0
+version: '0.3'
