@@ -1,0 +1,85 @@
+Segmente:
+  1: #A8
+    length: 300000
+    border_flow:
+      - 1: 1800
+      - 7: 5400
+      - 10: 3000
+      - 12: 1800
+      - 14: 5400
+      - 17: 3000
+      - 20: 400
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+    successor:
+      - 5
+    lanes: 3
+  2: #A5
+    length: 300000
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 5
+      - 6
+    successor:
+    lanes: 3
+  3: #A81 1
+    length: 300000
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    border_flow:
+      - 1: 1800
+      - 7: 5400
+      - 10: 3000
+      - 12: 1800
+      - 14: 5400
+      - 17: 3000
+      - 20: 400
+    predecessor:
+    successor:
+      - 7
+    lanes: 3
+  4: #A6
+    length: 300000
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    border_flow:
+      - 1: 1800
+      - 7: 5400
+      - 10: 3000
+      - 12: 1800
+      - 14: 5400
+      - 17: 3000
+      - 20: 400
+    predecessor:
+    successor:
+      - 7
+    lanes: 3
+  5: #Ül Dreieck A8  -> A5
+    length: 1500
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 1
+    successor:
+      - 2
+    lanes: 3
+  6: #Ül Dreieck A81 -> A5
+    length: 1500
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 7
+    successor:
+      - 2
+    lanes: 3
+  7: #A81 + A6 -> A81 2
+    length: 300000
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 3
+      - 4
+    successor:
+      - 6
+    lanes: 5
+
+
+Optionen:
+  Zeitintervall: 3600 #in sek
+  Simulationsschritt: 24 #Gibt an, wie lang simuliert werden soll 10*180=30min
+  Zeitschritt: 1

@@ -1,0 +1,131 @@
+Segmente:
+  1: #Stuttgart-Karlsruhe A8
+    length: 30000
+    border_flow:
+      - 1: 1800
+      - 7: 5400
+      - 10: 3000
+      - 12: 1800
+      - 14: 5400
+      - 17: 3000
+      - 20: 400
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+    successor:
+      - 10
+      - 11
+    lanes: 3
+  2: #Karlsruhe-Stuttgart A8
+    length: 30000
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 6
+      - 7
+    successor:
+    lanes: 3
+  3: # Basel-Karlsruhe A5
+    length: 30000
+    velocity_free: 120 #sonst Km/h Liste oder Konstante
+    border_flow:
+      - 1: 1800
+      - 7: 5400
+      - 10: 3000
+      - 12: 1800
+      - 14: 5400
+      - 17: 3000
+      - 20: 400
+    predecessor:
+    successor:
+      - 7
+      - 8
+    lanes: 3
+  4: #Frankfurt-Karlsruhe A5
+    length: 30000
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    border_flow:
+      - 1: 1800
+      - 7: 5400
+      - 10: 3000
+      - 12: 1800
+      - 14: 5400
+      - 17: 3000
+      - 20: 400
+    predecessor:
+    successor:
+      - 6
+      - 9
+    lanes: 3
+  5: #Karlsruhe-Frankfurt A5
+    length: 30000
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 8
+      - 10
+    successor:
+    lanes: 3
+  6: #�berleitung Frankfurt A5 - Stuttgart A8
+    length: 1500
+    velocity_free: 100 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 4
+    successor:
+      - 2
+    lanes: 2
+
+  7: #�berleitung Basel A5 -Stuttgart A8
+    length: 1200
+    velocity_free: 100 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 3
+    successor:
+      - 2
+    lanes: 2
+
+  8: #�berleitung Basel - Frankfurt A5
+    length: 1200
+    velocity_free: 120 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 3
+    successor:
+      - 5
+    lanes: 2
+  9: #�berleitung Frankfurt - Basel A5
+    length: 1200
+    velocity_free: 120 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 4
+    successor:
+      - 12
+    lanes: 2
+  10: #�berleitung Stuttgart - Frankfurt A5
+    length: 800
+    velocity_free: 100 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 1
+    successor:
+      - 5
+    lanes: 2
+  11: #�berleitung Stuttgart - Basel A5
+    length: 1200
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 1
+    successor:
+      - 12
+    lanes: 2
+  12: #Karlsruhe-Basel A5
+    length: 30000
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 9
+      - 11
+    successor:
+    lanes: 3
+
+
+
+Optionen:
+  Zeitintervall: 3600 #in sek
+  Simulationsschritt: 24 #Gibt an, wie lang simuliert werden soll 10*180s=1800s=30min
+  Zeitschritt: 1 #Zeitlicher Abstand zwischen den
+  Loggingintervall: 3600

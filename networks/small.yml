@@ -1,0 +1,84 @@
+Segmente:
+  1: #Stuttgart-Karlsruhe A8
+    length: 4000
+    border_flow:
+      - 0: 1800
+      - 4: 5400
+      - 7: 3600
+      - 10: 1800
+    velocity_free : 130 #sonst Km/h Liste oder Konstante 
+    predecessor : 
+    successor :
+      - 2
+      - 3
+    lanes: 3
+  2: #Stuttgart-Karlsruhe A8
+    length: 4000
+    velocity_free : 130 #sonst Km/h Liste oder Konstante 
+    predecessor :
+      - 1 
+    successor :
+      - 4
+    lanes: 3
+  3: #Stuttgart-Karlsruhe A8
+    length: 2000
+    velocity_free : 130 #sonst Km/h Liste oder Konstante 
+    predecessor : 
+      - 1
+    successor :
+      - 8
+    wave_coef: 1
+    lanes: 2
+  8: #Stuttgart-Karlsruhe A8
+    length: 2000
+    velocity_free : 130 #sonst Km/h Liste oder Konstante 
+    predecessor : 
+      - 3
+      - 5
+    successor :
+      - 4
+    lanes: 2
+  4: #Stuttgart-Karlsruhe A8
+    length: 500
+    velocity_free : 130 #sonst Km/h Liste oder Konstante 
+    predecessor : 
+      - 2
+      - 8
+    successor :
+      - 6
+    lanes: 3
+  5: #Stuttgart-Karlsruhe A8
+    length: 4000
+    border_flow:
+      - 1: 500
+      - 4: 1800
+      - 7: 5400
+      - 10: 1800 
+    velocity_free : 130 #sonst Km/h Liste oder Konstante 
+    predecessor : 
+    successor :
+      - 8
+    lanes: 3
+  6: #Stuttgart-Karlsruhe A8
+    length: 500
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor : 
+      - 4
+    successor :
+      - 7
+    lanes: 3
+
+  7: #Stuttgart-Karlsruhe A8
+    length: 4000
+    velocity_free : 130 #sonst Km/h Liste oder Konstante 
+    predecessor : 
+      - 6
+    successor :
+    lanes: 3
+
+
+Optionen:
+  Zeitintervall: 600 #in sek
+  Simulationsschritt: 12 #Gibt an, wie lang simuliert werden soll 10*180=30min
+  Zeitschritt : 1
+  Loggingintervall: 300 #in sek

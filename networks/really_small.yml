@@ -1,0 +1,53 @@
+Optionen:
+  Zeitintervall: 60 #in sek
+  Simulationsschritt: 30 #Gibt an, wie lang simuliert werden soll 10*180=30min
+  Zeitschritt: 1
+
+
+Segmente:
+  1:
+    length: 50
+    border_flow:
+      - 0: 1800
+      - 4: 5400
+      - 10: 100
+      - 20: 1000
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+    successor:
+      - 2
+      - 3
+    lanes: 3
+  2:
+    length: 50
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 1
+    successor:
+      - 4
+    lanes: 1
+  3:
+    length: 50
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 1
+    successor:
+      - 4
+    lanes: 2
+
+  4:
+    length: 50
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 2
+      - 3
+    successor:
+      - 5
+    lanes: 3
+  5:
+    length: 50
+    velocity_free: 130 #sonst Km/h Liste oder Konstante
+    predecessor:
+      - 4
+    successor:
+    lanes: 3
