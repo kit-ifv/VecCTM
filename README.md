@@ -1,6 +1,8 @@
-The traffic flow model Cell-Transmission Model (CTM) was implemented in Python in various ways. 
-The vectorized implementation was published in:
+The traffic flow model Cell-Transmission Model (CTM) was implemented in Python in various ways.
 
+The vectorized implementation was presented on 
+the 15th International Conference on Ambient Systems, Networks and Technologies, April 23-25, 2024, Hasselt, Belgium (ANT 2024)
+and afterwards published in:
 Hauke, R., Kübler, J., Baumann, M., & Vortisch, P. (2024).
 A Vectorized Formulation of the Cell Transmission Model for Efficient Simulation of Large-Scale Freeway Networks. 
 Procedia Computer Science, 238, 143-150.

@@ -5,6 +5,12 @@ This document contains a system documentation for the vectorized CTM implementat
 developed by Robin Hauke during his work as a student assistant at the Institute of Transport Studies at the Karlsruhe Institute of Technology,
 based on the results of his Bachelor's Thesis.
 
+The vectorized implementation was presented on the 15th International Conference on Ambient Systems, Networks and Technologies, April 23-25, 2024, Hasselt, Belgium (ANT 2024) and afterwards published in:
+
+Hauke, R., KÃ¼bler, J., Baumann, M., & Vortisch, P. (2024).
+A Vectorized Formulation of the Cell Transmission Model for Efficient Simulation of Large-Scale Freeway Networks. 
+Procedia Computer Science, 238, 143-150.
+
 VecCTM is a program for macroscopic traffic flow simulation of highway networks, based on the Cell-Transmisson Model by Daganzo.
 This is implemented through several versions of the Cell-Transmission Model, written in Python 3.10. 
 Both object-oriented and vectorized implementations are available, with a focus on the vectorized version,
